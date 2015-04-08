@@ -1,0 +1,1 @@
+A knockout binding to access single entries in a [ko-data-source](https://github.com/benschulz/ko-data-source).
