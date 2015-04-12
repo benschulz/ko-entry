@@ -57,7 +57,8 @@ define(['knockout'], function (ko) {
 
                 ko.utils.domNodeDisposal.addDisposeCallback(element, () => {
                     computer.dispose();
-                    entryView.dispose();
+                    if (entryView)
+                        entryView.dispose();
                 });
 
                 return {'controlsDescendantBindings': true};

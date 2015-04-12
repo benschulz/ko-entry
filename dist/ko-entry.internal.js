@@ -40,7 +40,8 @@ ko_entry_binding = function (ko) {
           });
         ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
           computer.dispose();
-          entryView.dispose();
+          if (entryView)
+            entryView.dispose();
         });
         return { 'controlsDescendantBindings': true };
       }
